@@ -1,0 +1,58 @@
+.form-quantity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: var(--color);
+}
+
+.form-quantity label {
+    color: white;
+    font-size: 1.15em;
+    padding: 10px;
+}
+.form-quantity input {
+
+}
+
+.form-quantity button {
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.form-quantity button:hover,
+.form-quantity button:focus {
+    background: #0053ba;
+}
+
+.form-quantity button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+.form-quantity button:active {
+    transform: scale(0.99);
+}
+
+.form-quantity .quantity {
+    display: flex;
+}
+.form-quantity .price {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}

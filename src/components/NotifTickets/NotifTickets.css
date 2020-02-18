@@ -1,0 +1,18 @@
+.notif {
+    background-color: red !important;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.notif span {
+    background-color: red !important;
+}
+
+

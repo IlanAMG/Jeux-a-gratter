@@ -1,0 +1,214 @@
+.container-principal {
+    display: flex;
+    height: 25%;
+    margin: 0px 15px;  
+    justify-content: center;
+    align-items: center;    
+}
+
+.image-jeu:hover {
+    transform: scale(1.02);
+    transition: 300ms;
+}
+
+.image-jeu {
+    position: relative;
+    box-shadow: -1px 4px 20px -4px rgba(0,0,0,0.61);
+    width: 850px;
+    height: 450px;
+    transition: 300ms;
+}
+
+.image-jeu img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-principal .desc {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.desc span {
+    color: rgb(32, 32, 32);
+    font-size: 1.2em;
+    padding-left: 20px;
+    font-style: italic;
+    z-index: 2;
+}
+
+.container-principal .card-jouer {
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to bottom, #0ea3ef, #00e1ff);
+    box-shadow: -7px -8px 31px 4px rgba(0,0,0,0.39);
+    bottom: 0px;
+    right: 0px;
+    width: 40%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.card-jouer:hover {
+    height: 100%;
+    transition: 300ms;
+}
+
+.card-jouer h3 {
+    font-size: 4.3em;
+    color: white;
+    margin: 3px;
+}
+.card-jouer span {
+    font-size: 1.2em;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.384);
+    padding: 5px;
+}
+
+.container-card {
+    display: flex;
+    height: 75%;
+    margin: 0px 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 20px;
+    width: 525px;
+    height: 300px;
+    box-shadow: -1px 4px 20px -4px rgba(0,0,0,0.61);
+    position: relative;
+    transition: 300ms;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.card .card-desc {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    bottom: 0px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.card-desc span {
+    color: rgb(32, 32, 32);
+    font-size: 1em;
+    padding-left: 10px;
+    font-style: italic;
+    z-index: 2;
+}
+
+.card .card-card-jouer {
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(to bottom, #0ea3ef, #00e1ff);
+    box-shadow: -7px -8px 31px 4px rgba(0,0,0,0.39);
+    bottom: 0px;
+    right: 0px;
+    width: 40%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-card-jouer h3 {
+    font-size: 2em;
+    color: white;
+    margin: 3px;
+}
+.card-card-jouer span {
+    font-size: 0.8em;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.384);
+    padding: 5px;
+}
+
+@media only screen and (max-width: 1020px) {
+    .image-jeu {
+        width: 595px;
+        height: 315px;
+    }
+}
+@media only screen and (max-width: 730px) {
+    .image-jeu {
+        width: 357px;
+        height: 189px;
+    }
+
+    .card {
+        width: 350px;
+        height: 200px;
+    }
+
+    .container-principal .desc {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.7);
+        bottom: 0px;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .desc span {
+        color: rgb(32, 32, 32);
+        font-size: 1em;
+        padding-left: 10px;
+        font-style: italic;
+        z-index: 2;
+    }
+    
+    .container-principal .card-jouer {
+        position: absolute;
+        z-index: 1;
+        background: linear-gradient(to bottom, #0ea3ef, #00e1ff);
+        box-shadow: -7px -8px 31px 4px rgba(0,0,0,0.39);
+        bottom: 0px;
+        right: 0px;
+        width: 40%;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card-jouer h3 {
+        font-size: 2em;
+        color: white;
+        margin: 3px;
+    }
+    .card-jouer span {
+        font-size: 0.8em;
+        color: white;
+        background-color: rgba(128, 128, 128, 0.384);
+        padding: 5px;
+    }
+}
+

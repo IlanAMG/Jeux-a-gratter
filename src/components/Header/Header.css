@@ -1,0 +1,150 @@
+:root {
+    --color: #0ea3ef;
+    --color2: #fffffff5;
+}
+
+.topbar-container {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: var(--color);
+    z-index: 6;
+}
+
+.topbar li {
+    padding: 0px 8px;
+}
+
+.topbar li, 
+.topbar .topbar-btn {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    transition: 300ms;
+}
+
+.topbar ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.topbar .topbar-btn {
+    text-decoration: none;
+}
+
+.menu, .logo {
+    color: white;  
+}
+
+.gemmes {
+    color: rgb(83, 83, 94);
+    margin-right: 20px;
+}
+
+
+.topbar .icons-top {
+    height: 25px;
+    width: 25px;
+    margin-right: 8px;
+}
+
+.topbar .topbar-account {
+    margin-left: auto;
+}
+
+/* .menu-logo {
+    background-color: var(--color);
+} */
+.menu-logo li:nth-child(3) {
+    background: transparent;
+    font-size: 0.8em;
+    color: rgb(140, 140, 150);
+}
+
+.menu-logo span {
+    font-style: italic;
+}
+
+.menu-logo li:first-child {
+    width: 72px;
+    padding-left:24px;
+    cursor: pointer;
+    background-color: var(--color);
+}
+
+.gemmes-login {
+    background-color: var(--color2);
+}
+
+.gemmes-login .gemmes .gem1 {
+   color: #00f176;
+}
+.gemmes-login .gemmes .gem2 {
+   color: #ffc500;
+}
+.gemmes-login .gemmes .gem3 {
+   color: #f93345;
+}
+.gemmes-login .login {
+   color: rgb(52, 52, 56);
+   cursor: pointer;
+}
+.gemmes-login .login:hover {
+   color: var(--color);
+}
+
+@media only screen and (max-width: 940px) {
+    .gemmes {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .menu-logo li:nth-child(3) {
+        display: none;
+    }
+    
+    .menu-logo span {
+        font-style: italic;
+    }
+}
+
+ /* Grand Ecran */
+ @media only screen and (min-width: 600px) {
+    .topbar {
+        font-size: 1.1em;
+    }
+
+
+    .topbar-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--color2);
+    }
+
+    .gemmes-login {
+        background-color: transparent;
+    }
+
+    .topbar li, 
+    .topbar .topbar-btn {
+        height: 56px;
+    }
+
+    .menu-logo li:nth-child(2) {
+        padding-right: 15px;
+        background-color: var(--color);
+    }
+    .menu-logo li:nth-child(3) {
+        padding-left: 0px;
+    }
+
+    .menu-logo li:nth-child(3):before{
+        content: '';
+        display: inline-block;
+        border-right: solid 30px transparent;
+        border-bottom: solid 56px var(--color); 
+    }
+ }

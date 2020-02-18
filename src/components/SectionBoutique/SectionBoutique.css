@@ -1,0 +1,75 @@
+.container-boutique {
+    height: 400px;
+    width: 800px;
+    background: var(--color2);
+    box-shadow: 0px 4px 17px -1px rgba(0,0,0,0.75);
+    align-self: center;
+    border-radius: 10px;
+}
+
+.container-grid {
+    display: grid;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.a {
+    grid-column: 1; grid-row: 1;
+}
+.b {
+    grid-column: 1; grid-row: 2;
+}
+.c {
+    grid-column: 2; grid-row: 1;
+}
+.d {
+    grid-column: 2; grid-row: 2;
+}
+.e {
+    grid-column: 3; grid-row: 1;
+}
+.f {
+    grid-column: 3; grid-row: 2;
+}
+
+.cardgem {
+    box-shadow: 0px 4px 7px -1px rgba(0,0,0,0.65); 
+    background: linear-gradient(to bottom, #0ea3ef, #00e1ff);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    transition: 300ms;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cardgem:hover {
+    transform: scale(1.03);
+    transition: 300ms;
+}
+
+.cardgem span {
+    color: white;
+    font-size: 1.9em;
+    display: flex;
+    align-self: flex-start;
+}
+.cardgem p {
+    color: white;
+    font-size: 1.9em;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0.185);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.gem2 {
+    color: #ffc500;
+    margin-right: 10px;
+ }
